@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        #main{
+            display: grid;
+            height: 200px;
+            grid-template-columns: 15% 70% 15%;
+            grid-template-rows: 15% 70% 15%;
+            padding: 20px;
+            grid-template-areas: "1 1 1""2 3 4" "5 5 5";
+
+        }
+        #first{background-color: aqua; grid-area: 1; border: solid black;}
+        #second{background-color: rgb(72, 0, 255); grid-area: 2;}
+        #third{background-color: rgb(255, 0, 106); grid-area: 3;}
+        #forth{background-color: rgb(0, 255, 94); grid-area: 4;}
+        #fifth{background-color: rgb(255, 0, 0); grid-area: 5;background-color: rgba(255, 255, 255, 0.8);}
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="first">Head</div>
+        <div id="second">Side1</div>
+        <div id="third">Body</div>
+        <div id="forth">Side2</div>
+        <div id="fifth">Footing</div>
+    </div>
+</body>
+</html>
